@@ -21,6 +21,7 @@ namespace CourseWork
             {
          
                 InitializeComponent();
+            ButtonLoad();
                 Id = 0;
                 CanShop.Checked = true;
                 ProductList = new List<string>();
@@ -42,7 +43,8 @@ namespace CourseWork
             public AddBrewForm(Dictionary<string, string> info) : base()
         {
                 InitializeComponent();
-                this.Text = Add.Text = "Изменить";
+            ButtonLoad();
+            this.Text = Add.Text = "Изменить";
                 Actions();
                 Id = Convert.ToInt32(info["Id"]);
                 BrewName.Text = info["Names"];

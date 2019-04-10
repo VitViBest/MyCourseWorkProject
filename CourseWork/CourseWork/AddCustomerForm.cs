@@ -16,11 +16,13 @@ namespace CourseWork
         public AddCustomerForm() : base()
         {
             InitializeComponent();
+            ButtonLoad();
             Id = 0;
         }
         public AddCustomerForm(Dictionary<string, string> info) : base()
         {
             InitializeComponent();
+            ButtonLoad();
             this.Text = Add.Text = "Изменить";
             Id = Convert.ToInt32(info["Id"]);
             LnameText.Text = info["Lname"];

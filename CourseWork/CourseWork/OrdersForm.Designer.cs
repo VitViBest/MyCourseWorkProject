@@ -31,14 +31,14 @@
             this.Delete = new System.Windows.Forms.Button();
             this.Change = new System.Windows.Forms.Button();
             this.Orders = new System.Windows.Forms.DataGridView();
-            this.Back = new System.Windows.Forms.Button();
-            this.Check = new System.Windows.Forms.Button();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Names = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Place = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Employeer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.All = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Back = new System.Windows.Forms.Button();
+            this.Check = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Orders)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,27 +82,6 @@
             this.Orders.Size = new System.Drawing.Size(502, 198);
             this.Orders.TabIndex = 26;
             // 
-            // Back
-            // 
-            this.Back.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.Back.Location = new System.Drawing.Point(12, 12);
-            this.Back.Name = "Back";
-            this.Back.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Back.Size = new System.Drawing.Size(75, 23);
-            this.Back.TabIndex = 39;
-            this.Back.Text = "Назад";
-            this.Back.UseVisualStyleBackColor = true;
-            // 
-            // Check
-            // 
-            this.Check.Location = new System.Drawing.Point(195, 95);
-            this.Check.Name = "Check";
-            this.Check.Size = new System.Drawing.Size(86, 43);
-            this.Check.TabIndex = 40;
-            this.Check.Text = "Создать чек";
-            this.Check.UseVisualStyleBackColor = true;
-            this.Check.Click += new System.EventHandler(this.Check_Click);
-            // 
             // Id
             // 
             this.Id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
@@ -110,7 +89,6 @@
             this.Id.Name = "Id";
             this.Id.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.Id.Visible = false;
-            this.Id.Width = 22;
             // 
             // Names
             // 
@@ -156,10 +134,32 @@
             this.All.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.All.Width = 47;
             // 
+            // Back
+            // 
+            this.Back.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.Back.Location = new System.Drawing.Point(12, 12);
+            this.Back.Name = "Back";
+            this.Back.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Back.Size = new System.Drawing.Size(75, 23);
+            this.Back.TabIndex = 39;
+            this.Back.Text = "Назад";
+            this.Back.UseVisualStyleBackColor = true;
+            // 
+            // Check
+            // 
+            this.Check.Location = new System.Drawing.Point(195, 95);
+            this.Check.Name = "Check";
+            this.Check.Size = new System.Drawing.Size(86, 43);
+            this.Check.TabIndex = 40;
+            this.Check.Text = "Создать чек";
+            this.Check.UseVisualStyleBackColor = true;
+            this.Check.Click += new System.EventHandler(this.Check_Click);
+            // 
             // OrdersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.CancelButton = this.Back;
             this.ClientSize = new System.Drawing.Size(535, 363);
             this.Controls.Add(this.Check);
@@ -167,7 +167,7 @@
             this.Controls.Add(this.Delete);
             this.Controls.Add(this.Change);
             this.Controls.Add(this.Orders);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "OrdersForm";

@@ -16,6 +16,7 @@ namespace CourseWork
         public OrdersForm() : base()
         {
             InitializeComponent();
+            ButtonLoad();
             Actions();
         }
 

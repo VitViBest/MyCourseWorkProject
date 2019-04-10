@@ -16,6 +16,7 @@ namespace CourseWork
         public RaitingForm()
         {
             InitializeComponent();
+            ButtonLoad();
             Show = 1;
             Actions();
         }

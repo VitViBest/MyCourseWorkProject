@@ -30,6 +30,11 @@
         {
             this.Back = new System.Windows.Forms.Button();
             this.Products = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Names = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Count = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ones = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MinCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Filtr = new System.Windows.Forms.Button();
             this.Cancel = new System.Windows.Forms.Button();
             this.CountTo = new System.Windows.Forms.NumericUpDown();
@@ -43,11 +48,6 @@
             this.CountZero = new System.Windows.Forms.Button();
             this.Add = new System.Windows.Forms.Button();
             this.Delete = new System.Windows.Forms.Button();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Names = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Count = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ones = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MinCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.Products)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CountTo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CountFrom)).BeginInit();
@@ -83,6 +83,50 @@
             this.Products.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Products.Size = new System.Drawing.Size(288, 198);
             this.Products.TabIndex = 39;
+            // 
+            // Id
+            // 
+            this.Id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Id.Visible = false;
+            // 
+            // Names
+            // 
+            this.Names.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Names.HeaderText = "Название";
+            this.Names.Name = "Names";
+            this.Names.ReadOnly = true;
+            this.Names.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Names.Width = 63;
+            // 
+            // Count
+            // 
+            this.Count.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Count.HeaderText = "Обьем";
+            this.Count.Name = "Count";
+            this.Count.ReadOnly = true;
+            this.Count.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Count.Width = 47;
+            // 
+            // Ones
+            // 
+            this.Ones.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Ones.HeaderText = "Единицы";
+            this.Ones.Name = "Ones";
+            this.Ones.ReadOnly = true;
+            this.Ones.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Ones.Width = 58;
+            // 
+            // MinCount
+            // 
+            this.MinCount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.MinCount.HeaderText = "Минимум";
+            this.MinCount.Name = "MinCount";
+            this.MinCount.ReadOnly = true;
+            this.MinCount.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.MinCount.Visible = false;
             // 
             // Filtr
             // 
@@ -211,56 +255,11 @@
             this.Delete.UseVisualStyleBackColor = true;
             this.Delete.Click += new System.EventHandler(this.Delete_Click);
             // 
-            // Id
-            // 
-            this.Id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            this.Id.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Id.Visible = false;
-            this.Id.Width = 22;
-            // 
-            // Names
-            // 
-            this.Names.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Names.HeaderText = "Название";
-            this.Names.Name = "Names";
-            this.Names.ReadOnly = true;
-            this.Names.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Names.Width = 63;
-            // 
-            // Count
-            // 
-            this.Count.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Count.HeaderText = "Обьем";
-            this.Count.Name = "Count";
-            this.Count.ReadOnly = true;
-            this.Count.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Count.Width = 47;
-            // 
-            // Ones
-            // 
-            this.Ones.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Ones.HeaderText = "Единицы";
-            this.Ones.Name = "Ones";
-            this.Ones.ReadOnly = true;
-            this.Ones.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Ones.Width = 58;
-            // 
-            // MinCount
-            // 
-            this.MinCount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.MinCount.HeaderText = "Минимум";
-            this.MinCount.Name = "MinCount";
-            this.MinCount.ReadOnly = true;
-            this.MinCount.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.MinCount.Visible = false;
-            this.MinCount.Width = 61;
-            // 
             // ProductsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.CancelButton = this.Back;
             this.ClientSize = new System.Drawing.Size(575, 354);
             this.Controls.Add(this.CountZero);
@@ -278,7 +277,7 @@
             this.Controls.Add(this.FiltrLabel);
             this.Controls.Add(this.Back);
             this.Controls.Add(this.Products);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ProductsForm";

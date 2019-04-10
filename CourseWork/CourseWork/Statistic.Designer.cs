@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             this.Statist = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Names = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Count = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Summ = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CategoryList = new System.Windows.Forms.CheckedListBox();
             this.CategoryLabel = new System.Windows.Forms.Label();
             this.FiltrLabel = new System.Windows.Forms.Label();
@@ -48,12 +54,6 @@
             this.AllMoney = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Names = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Count = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Summ = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.Statist)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,6 +76,57 @@
             this.Statist.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Statist.Size = new System.Drawing.Size(559, 258);
             this.Statist.TabIndex = 2;
+            // 
+            // Id
+            // 
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Visible = false;
+            // 
+            // Names
+            // 
+            this.Names.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Names.HeaderText = "Название";
+            this.Names.Name = "Names";
+            this.Names.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Names.Width = 63;
+            // 
+            // Type
+            // 
+            this.Type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Type.HeaderText = "Тип";
+            this.Type.Name = "Type";
+            this.Type.ReadOnly = true;
+            this.Type.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Type.Width = 32;
+            // 
+            // Category
+            // 
+            this.Category.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Category.HeaderText = "Категория";
+            this.Category.Name = "Category";
+            this.Category.ReadOnly = true;
+            this.Category.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Category.Width = 66;
+            // 
+            // Count
+            // 
+            this.Count.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Count.HeaderText = "Количество";
+            this.Count.Name = "Count";
+            this.Count.ReadOnly = true;
+            this.Count.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Count.Width = 72;
+            // 
+            // Summ
+            // 
+            this.Summ.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Summ.HeaderText = "Сумма";
+            this.Summ.Name = "Summ";
+            this.Summ.ReadOnly = true;
+            this.Summ.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Summ.Width = 47;
             // 
             // CategoryList
             // 
@@ -259,61 +310,11 @@
             this.label5.TabIndex = 54;
             this.label5.Text = "Всего заработано";
             // 
-            // Id
-            // 
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
-            this.Id.Visible = false;
-            // 
-            // Names
-            // 
-            this.Names.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Names.HeaderText = "Название";
-            this.Names.Name = "Names";
-            this.Names.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Names.Width = 63;
-            // 
-            // Type
-            // 
-            this.Type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Type.HeaderText = "Тип";
-            this.Type.Name = "Type";
-            this.Type.ReadOnly = true;
-            this.Type.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Type.Width = 32;
-            // 
-            // Category
-            // 
-            this.Category.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Category.HeaderText = "Категория";
-            this.Category.Name = "Category";
-            this.Category.ReadOnly = true;
-            this.Category.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Category.Width = 66;
-            // 
-            // Count
-            // 
-            this.Count.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Count.HeaderText = "Количество";
-            this.Count.Name = "Count";
-            this.Count.ReadOnly = true;
-            this.Count.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Count.Width = 72;
-            // 
-            // Summ
-            // 
-            this.Summ.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Summ.HeaderText = "Сумма";
-            this.Summ.Name = "Summ";
-            this.Summ.ReadOnly = true;
-            this.Summ.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Summ.Width = 47;
-            // 
             // DateFrom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.CancelButton = this.Back;
             this.ClientSize = new System.Drawing.Size(913, 350);
             this.Controls.Add(this.label5);
@@ -336,7 +337,7 @@
             this.Controls.Add(this.CategoryLabel);
             this.Controls.Add(this.FiltrLabel);
             this.Controls.Add(this.Statist);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "DateFrom";

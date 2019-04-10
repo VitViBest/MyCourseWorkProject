@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.Products = new System.Windows.Forms.DataGridView();
+            this.Names = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Count = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ones = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MinCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NamesLabel = new System.Windows.Forms.Label();
             this.CountLabel = new System.Windows.Forms.Label();
             this.OnesLabel = new System.Windows.Forms.Label();
@@ -39,10 +43,6 @@
             this.DeleteRow = new System.Windows.Forms.Button();
             this.Back = new System.Windows.Forms.Button();
             this.Buy = new System.Windows.Forms.Button();
-            this.Names = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Count = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ones = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MinCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.Products)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CountText)).BeginInit();
             this.SuspendLayout();
@@ -65,6 +65,41 @@
             this.Products.Size = new System.Drawing.Size(288, 198);
             this.Products.TabIndex = 40;
             this.Products.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Products_CellContentClick);
+            // 
+            // Names
+            // 
+            this.Names.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Names.HeaderText = "Название";
+            this.Names.Name = "Names";
+            this.Names.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Names.Width = 63;
+            // 
+            // Count
+            // 
+            this.Count.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Count.HeaderText = "Обьем";
+            this.Count.Name = "Count";
+            this.Count.ReadOnly = true;
+            this.Count.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Count.Width = 47;
+            // 
+            // Ones
+            // 
+            this.Ones.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Ones.HeaderText = "Единицы";
+            this.Ones.Name = "Ones";
+            this.Ones.ReadOnly = true;
+            this.Ones.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Ones.Width = 58;
+            // 
+            // MinCount
+            // 
+            this.MinCount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.MinCount.HeaderText = "Минимум";
+            this.MinCount.Name = "MinCount";
+            this.MinCount.ReadOnly = true;
+            this.MinCount.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.MinCount.Visible = false;
             // 
             // NamesLabel
             // 
@@ -167,47 +202,12 @@
             this.Buy.UseVisualStyleBackColor = true;
             this.Buy.Click += new System.EventHandler(this.Buy_Click);
             // 
-            // Names
-            // 
-            this.Names.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Names.HeaderText = "Название";
-            this.Names.Name = "Names";
-            this.Names.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Names.Width = 63;
-            // 
-            // Count
-            // 
-            this.Count.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Count.HeaderText = "Обьем";
-            this.Count.Name = "Count";
-            this.Count.ReadOnly = true;
-            this.Count.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Count.Width = 47;
-            // 
-            // Ones
-            // 
-            this.Ones.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Ones.HeaderText = "Единицы";
-            this.Ones.Name = "Ones";
-            this.Ones.ReadOnly = true;
-            this.Ones.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Ones.Width = 58;
-            // 
-            // MinCount
-            // 
-            this.MinCount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.MinCount.HeaderText = "Минимум";
-            this.MinCount.Name = "MinCount";
-            this.MinCount.ReadOnly = true;
-            this.MinCount.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.MinCount.Visible = false;
-            this.MinCount.Width = 61;
-            // 
             // AddProductsForm
             // 
             this.AcceptButton = this.Buy;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.CancelButton = this.Back;
             this.ClientSize = new System.Drawing.Size(433, 395);
             this.Controls.Add(this.Buy);
@@ -221,6 +221,7 @@
             this.Controls.Add(this.CountLabel);
             this.Controls.Add(this.NamesLabel);
             this.Controls.Add(this.Products);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AddProductsForm";

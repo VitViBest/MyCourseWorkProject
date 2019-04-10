@@ -28,6 +28,7 @@ namespace CourseWork
         public CheckCreateForm(int id)
         {
             InitializeComponent();
+            ButtonLoad();
             UserId = id;
             RowId = null;
             Tables = Controller.GetAllFromWithNames(SpecialSqlController.Tables.tables,"Enable=1 and CanTake=1");
@@ -45,6 +46,9 @@ namespace CourseWork
             TimeOrder.MinDate = DateTime.Now;
             TimeOrder.Enabled = false;
             DateGive.MinDate = DateTime.Now.AddMinutes(30);
+            DateTime q = Convert.ToDateTime( DateTime.Now.ToShortDateString()+" 23:59");
+            
+            DateGive.MaxDate = q;
             Eat = Controller.GetAllFromWithNames(SpecialSqlController.Tables.eat, "Enable=1 and CanShop=1");
             Drink=Controller.GetAllFromWithNames(SpecialSqlController.Tables.drink, "Enable=1 and CanShop=1");
             foreach (var t in Tables)
@@ -63,6 +67,7 @@ namespace CourseWork
         public CheckCreateForm(string RowId)
         {
             InitializeComponent();
+            ButtonLoad();
             Tovar.DropDownStyle = Employeer.DropDownStyle = Table.DropDownStyle = Statys.DropDownStyle = ComboBoxStyle.DropDownList;
             Create.Text = "Изменить";
             Dictionary<string, string> r = Controller.TakeRowWithNamesById(SpecialSqlController.Tables.checks, int.Parse(RowId));
@@ -109,8 +114,8 @@ namespace CourseWork
             TimeOrder.Enabled = false;
             DateGive.MinDate =Convert.ToDateTime(r["DateGive"]);
             DateGive.Text = r["DateGive"];
-
-          
+            DateTime q = Convert.ToDateTime(DateGive.Value.ToShortDateString() + " 23:59");
+            DateGive.MaxDate = q;
             Eat = Controller.GetAllFromWithNames(SpecialSqlController.Tables.eat, "Enable=1 and CanShop=1");
             Drink = Controller.GetAllFromWithNames(SpecialSqlController.Tables.drink, "Enable=1 and CanShop=1");
             Actions();

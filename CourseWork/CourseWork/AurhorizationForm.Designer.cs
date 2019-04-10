@@ -50,14 +50,19 @@
             // 
             // Cancel
             // 
+            this.Cancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.Cancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Cancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.Cancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.Cancel.FlatAppearance.BorderSize = 2;
+            this.Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Cancel.Location = new System.Drawing.Point(310, 277);
             this.Cancel.Name = "Cancel";
             this.Cancel.Size = new System.Drawing.Size(75, 23);
             this.Cancel.TabIndex = 1;
             this.Cancel.Text = "Отмена";
-            this.Cancel.UseVisualStyleBackColor = true;
+            this.Cancel.UseVisualStyleBackColor = false;
             // 
             // Label_login
             // 
@@ -71,14 +76,16 @@
             // Label_password
             // 
             this.Label_password.AutoSize = true;
+            this.Label_password.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Label_password.Location = new System.Drawing.Point(114, 226);
             this.Label_password.Name = "Label_password";
-            this.Label_password.Size = new System.Drawing.Size(45, 13);
+            this.Label_password.Size = new System.Drawing.Size(47, 13);
             this.Label_password.TabIndex = 3;
             this.Label_password.Text = "Пароль";
             // 
             // Login
             // 
+            this.Login.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Login.Location = new System.Drawing.Point(176, 175);
             this.Login.Name = "Login";
             this.Login.Size = new System.Drawing.Size(251, 20);
@@ -87,6 +94,7 @@
             // 
             // Password
             // 
+            this.Password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Password.Location = new System.Drawing.Point(176, 223);
             this.Password.Name = "Password";
             this.Password.PasswordChar = '#';
@@ -113,6 +121,7 @@
             this.AcceptButton = this.Enter;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.CancelButton = this.Cancel;
             this.ClientSize = new System.Drawing.Size(554, 327);
             this.Controls.Add(this.Fail);
@@ -122,7 +131,7 @@
             this.Controls.Add(this.Label_login);
             this.Controls.Add(this.Cancel);
             this.Controls.Add(this.Enter);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AurhorizationForm";

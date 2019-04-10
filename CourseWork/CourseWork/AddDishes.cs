@@ -19,6 +19,7 @@ namespace CourseWork
         public AddDishes():base()
         {
             InitializeComponent();
+            ButtonLoad();
             Id = 0;
             CanShop.Checked = true;
             Portion.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -41,6 +42,7 @@ namespace CourseWork
         public AddDishes(Dictionary<string,string> info):base()
         {
             InitializeComponent();
+            ButtonLoad();
             this.Text = Add.Text = "Изменить";
             Portion.DropDownStyle = ComboBoxStyle.DropDownList;
             Portion.Items.AddRange(new string[] { "Маленькая", "Стандарт", "Большая" });

@@ -17,6 +17,7 @@ namespace CourseWork
         public AddProductsForm():base()
         {
             InitializeComponent();
+            ButtonLoad();
             BuyList = new List<Dictionary<string, string>>();
             OnesText.Items.Clear();
             OnesText.Items.AddRange(new string[] { "шт", "кг", "л" });

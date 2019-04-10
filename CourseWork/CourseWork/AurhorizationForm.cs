@@ -12,7 +12,7 @@ namespace CourseWork
 {
     public partial class AurhorizationForm : MainController
     {
-        public AurhorizationForm() : base() =>InitializeComponent();
+        public AurhorizationForm() : base() { InitializeComponent(); ButtonLoad(); Label_password.Font = Label_login.Font; }
 
 
         private void Login_Click(object sender, EventArgs e)

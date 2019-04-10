@@ -22,7 +22,23 @@ namespace CourseWork
             Controller = new SpecialSqlController();
             DataList = new List<Dictionary<string, string>>();
         }
+        public void ButtonLoad()
+        {
+            this.BackColor=Color.FromArgb(200, 255, 255);
+          foreach ( Button b in this.Controls.OfType<Button>().ToList())
+            {
+                b.BackColor = Color.FromArgb(255, 255, 192);
+                b.FlatAppearance.BorderColor= Color.FromArgb(255, 255, 192);
+                b.FlatAppearance.BorderSize = 2;
+                b.FlatStyle = FlatStyle.Flat;
+            }
+          foreach(DataGridView i in this.Controls.OfType<DataGridView>())
+            {
+                i.BackgroundColor = Color.White;
+            }
 
+
+        }
         protected void OpenForm(Form form, bool show = true)
         {
             this.Hide();

@@ -19,6 +19,7 @@ namespace CourseWork
         public MenuForm(int id) : base()
         {
             InitializeComponent();
+            ButtonLoad();
             UserId = id;
             string job = Controller.TakeRowById(SpecialSqlController.Tables.job, int.Parse(Controller.TakeRowWithNamesById(SpecialSqlController.Tables.employeers, UserId)["Job"]))[1];
             switch (job) {

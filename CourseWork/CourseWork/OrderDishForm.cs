@@ -15,6 +15,7 @@ namespace CourseWork
         public OrderDishForm() : base()
         {
             InitializeComponent();
+            ButtonLoad();
             Actions();
         }
 

@@ -160,7 +160,7 @@
             // 
             this.Cancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.Cancel.Location = new System.Drawing.Point(655, 352);
+            this.Cancel.Location = new System.Drawing.Point(655, 340);
             this.Cancel.Name = "Cancel";
             this.Cancel.Size = new System.Drawing.Size(75, 23);
             this.Cancel.TabIndex = 8;
@@ -222,6 +222,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.CancelButton = this.Cancel;
             this.ClientSize = new System.Drawing.Size(742, 375);
             this.Controls.Add(this.panel1);
@@ -237,7 +238,7 @@
             this.Controls.Add(this.Dishes);
             this.Controls.Add(this.Employeers);
             this.Controls.Add(this.Profile);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MenuForm";

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace CourseWork
 {
-    public partial class Calcut : Form
+    public partial class Calcut : MainController
     {
         int Summa;
         public Calcut()
@@ -20,6 +20,7 @@ namespace CourseWork
         public Calcut(int summa)
         {
             InitializeComponent();
+            ButtonLoad();
             Done.Enabled = false;
             Summa = summa;
             Summ.Text += Summa.ToString();

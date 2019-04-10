@@ -18,6 +18,7 @@ namespace CourseWork
         public ProfileForm(int id) : base()
         {
             InitializeComponent();
+            ButtonLoad();
             UserId = id;
         }
 

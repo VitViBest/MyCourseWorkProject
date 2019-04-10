@@ -29,6 +29,15 @@
         private void InitializeComponent()
         {
             this.Dishes = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Names = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Portion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cost = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Mass = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Kaloryes = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CanShop = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ingredients = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Add = new System.Windows.Forms.Button();
             this.Sort_label = new System.Windows.Forms.Label();
             this.SortPanel = new System.Windows.Forms.ComboBox();
@@ -51,15 +60,6 @@
             this.Delete = new System.Windows.Forms.Button();
             this.IngredientsFiltr = new System.Windows.Forms.CheckedListBox();
             this.IngredientsLabel = new System.Windows.Forms.Label();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Names = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Portion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cost = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Mass = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Kaloryes = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CanShop = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ingredients = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.Dishes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CostFrom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CostTo)).BeginInit();
@@ -72,6 +72,7 @@
             this.Dishes.AllowUserToAddRows = false;
             this.Dishes.AllowUserToDeleteRows = false;
             this.Dishes.AllowUserToResizeRows = false;
+            this.Dishes.BackgroundColor = System.Drawing.Color.White;
             this.Dishes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Dishes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
@@ -89,6 +90,85 @@
             this.Dishes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Dishes.Size = new System.Drawing.Size(816, 275);
             this.Dishes.TabIndex = 0;
+            // 
+            // Id
+            // 
+            this.Id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Id.Visible = false;
+            // 
+            // Names
+            // 
+            this.Names.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Names.HeaderText = "Название";
+            this.Names.Name = "Names";
+            this.Names.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Names.Width = 63;
+            // 
+            // Portion
+            // 
+            this.Portion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Portion.HeaderText = "Порция";
+            this.Portion.Name = "Portion";
+            this.Portion.ReadOnly = true;
+            this.Portion.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Portion.Width = 51;
+            // 
+            // Cost
+            // 
+            this.Cost.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Cost.HeaderText = "Стоимость";
+            this.Cost.Name = "Cost";
+            this.Cost.ReadOnly = true;
+            this.Cost.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Cost.Width = 68;
+            // 
+            // Mass
+            // 
+            this.Mass.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Mass.HeaderText = "Масса";
+            this.Mass.Name = "Mass";
+            this.Mass.ReadOnly = true;
+            this.Mass.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Mass.Width = 46;
+            // 
+            // Kaloryes
+            // 
+            this.Kaloryes.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Kaloryes.HeaderText = "Калории";
+            this.Kaloryes.Name = "Kaloryes";
+            this.Kaloryes.ReadOnly = true;
+            this.Kaloryes.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Kaloryes.Width = 56;
+            // 
+            // Category
+            // 
+            this.Category.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Category.HeaderText = "Категория";
+            this.Category.Name = "Category";
+            this.Category.ReadOnly = true;
+            this.Category.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Category.Width = 66;
+            // 
+            // CanShop
+            // 
+            this.CanShop.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.CanShop.HeaderText = "Доступен";
+            this.CanShop.Name = "CanShop";
+            this.CanShop.ReadOnly = true;
+            this.CanShop.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.CanShop.Width = 62;
+            // 
+            // Ingredients
+            // 
+            this.Ingredients.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Ingredients.HeaderText = "Ингредиенты";
+            this.Ingredients.Name = "Ingredients";
+            this.Ingredients.ReadOnly = true;
+            this.Ingredients.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Ingredients.Width = 81;
             // 
             // Add
             // 
@@ -305,90 +385,11 @@
             this.IngredientsLabel.TabIndex = 27;
             this.IngredientsLabel.Text = "Ингредтенты";
             // 
-            // Id
-            // 
-            this.Id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            this.Id.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Id.Visible = false;
-            this.Id.Width = 22;
-            // 
-            // Names
-            // 
-            this.Names.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Names.HeaderText = "Название";
-            this.Names.Name = "Names";
-            this.Names.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Names.Width = 63;
-            // 
-            // Portion
-            // 
-            this.Portion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Portion.HeaderText = "Порция";
-            this.Portion.Name = "Portion";
-            this.Portion.ReadOnly = true;
-            this.Portion.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Portion.Width = 51;
-            // 
-            // Cost
-            // 
-            this.Cost.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Cost.HeaderText = "Стоимость";
-            this.Cost.Name = "Cost";
-            this.Cost.ReadOnly = true;
-            this.Cost.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Cost.Width = 68;
-            // 
-            // Mass
-            // 
-            this.Mass.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Mass.HeaderText = "Масса";
-            this.Mass.Name = "Mass";
-            this.Mass.ReadOnly = true;
-            this.Mass.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Mass.Width = 46;
-            // 
-            // Kaloryes
-            // 
-            this.Kaloryes.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Kaloryes.HeaderText = "Калории";
-            this.Kaloryes.Name = "Kaloryes";
-            this.Kaloryes.ReadOnly = true;
-            this.Kaloryes.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Kaloryes.Width = 56;
-            // 
-            // Category
-            // 
-            this.Category.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Category.HeaderText = "Категория";
-            this.Category.Name = "Category";
-            this.Category.ReadOnly = true;
-            this.Category.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Category.Width = 66;
-            // 
-            // CanShop
-            // 
-            this.CanShop.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.CanShop.HeaderText = "Доступен";
-            this.CanShop.Name = "CanShop";
-            this.CanShop.ReadOnly = true;
-            this.CanShop.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.CanShop.Width = 62;
-            // 
-            // Ingredients
-            // 
-            this.Ingredients.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Ingredients.HeaderText = "Ингредиенты";
-            this.Ingredients.Name = "Ingredients";
-            this.Ingredients.ReadOnly = true;
-            this.Ingredients.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Ingredients.Width = 81;
-            // 
             // OrderDishForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.CancelButton = this.Back;
             this.ClientSize = new System.Drawing.Size(1232, 399);
             this.Controls.Add(this.IngredientsLabel);
@@ -414,7 +415,7 @@
             this.Controls.Add(this.SortPanel);
             this.Controls.Add(this.Add);
             this.Controls.Add(this.Dishes);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "OrderDishForm";

@@ -16,6 +16,7 @@ namespace CourseWork
         public ProductsForm() : base()
         {
             InitializeComponent();
+            ButtonLoad();
             OnesList.Items.Clear();
             OnesList.Items.AddRange(new string[] { "шт", "кг", "л" });
             Actions();

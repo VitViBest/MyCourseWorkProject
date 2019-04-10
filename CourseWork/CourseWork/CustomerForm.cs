@@ -15,6 +15,7 @@ namespace CourseWork
         public CustomerForm()
         {
             InitializeComponent();
+            ButtonLoad();
             Actions();
         }
 

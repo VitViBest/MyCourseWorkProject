@@ -19,6 +19,7 @@ namespace CourseWork
         public EmployeersForm(int id) : base()
         {
             InitializeComponent();
+            ButtonLoad();
             UserId = id;
             Actions();
         }

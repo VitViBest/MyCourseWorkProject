@@ -266,8 +266,9 @@
             this.AcceptButton = this.Add;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.CancelButton = this.Cancel;
-            this.ClientSize = new System.Drawing.Size(610, 254);
+            this.ClientSize = new System.Drawing.Size(620, 254);
             this.Controls.Add(this.Delete);
             this.Controls.Add(this.AddIng);
             this.Controls.Add(this.Count);
@@ -287,7 +288,7 @@
             this.Controls.Add(this.LabelVolume);
             this.Controls.Add(this.LabelCost);
             this.Controls.Add(this.LabelName);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AddBrewForm";

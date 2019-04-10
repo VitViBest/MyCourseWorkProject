@@ -16,6 +16,7 @@ namespace CourseWork
         public DateFrom():base()
         {
             InitializeComponent();
+            ButtonLoad();
             Actions();
             
         }

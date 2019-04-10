@@ -18,6 +18,7 @@ namespace CourseWork
         public AddEmployerForm():base()
         {
             InitializeComponent();
+            ButtonLoad();
             Id = 0;
             Random r = new Random();
             string PasswordRand;
@@ -42,6 +43,7 @@ namespace CourseWork
         public AddEmployerForm(Dictionary<string, string> info):base()
         {
             InitializeComponent();
+            ButtonLoad();
             DaysText.DropDownStyle = JobText.DropDownStyle = ComboBoxStyle.DropDownList;
             GetJobs();
             this.Text = "Изменить";

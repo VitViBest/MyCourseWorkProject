@@ -21,6 +21,7 @@ namespace CourseWork
         public Edit(SpecialSqlController.Tables table) : base()
         {
             InitializeComponent();
+            ButtonLoad();
             Table = table;
             Actions();
         }

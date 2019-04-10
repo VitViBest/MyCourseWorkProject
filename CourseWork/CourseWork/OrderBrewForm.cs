@@ -15,6 +15,7 @@ namespace CourseWork
         public OrderBrewForm() : base()
         {
             InitializeComponent();
+            ButtonLoad();
             Actions();
         }
 
