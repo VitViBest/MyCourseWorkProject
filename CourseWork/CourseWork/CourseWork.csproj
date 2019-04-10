@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{28371A4D-F5B4-482A-ACCF-4D09DA35D5F5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CourseWork</RootNamespace>
+    <AssemblyName>CourseWork</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Google.Protobuf, Version=3.5.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.5.1\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.14.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.14\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddBrewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBrewForm.Designer.cs">
+      <DependentUpon>AddBrewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCustomerForm.Designer.cs">
+      <DependentUpon>AddCustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEmployerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEmployerForm.Designer.cs">
+      <DependentUpon>AddEmployerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProductsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProductsForm.Designer.cs">
+      <DependentUpon>AddProductsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AurhorizationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AurhorizationForm.Designer.cs">
+      <DependentUpon>AurhorizationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddDishes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDishes.Designer.cs">
+      <DependentUpon>AddDishes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calcut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calcut.Designer.cs">
+      <DependentUpon>Calcut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckCreateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckCreateForm.Designer.cs">
+      <DependentUpon>CheckCreateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerForm.Designer.cs">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeersForm.Designer.cs">
+      <DependentUpon>EmployeersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm.Designer.cs">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderBrewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderBrewForm.Designer.cs">
+      <DependentUpon>OrderBrewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderDishForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderDishForm.Designer.cs">
+      <DependentUpon>OrderDishForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdersForm.Designer.cs">
+      <DependentUpon>OrdersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductsForm.Designer.cs">
+      <DependentUpon>ProductsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfileForm.Designer.cs">
+      <DependentUpon>ProfileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RaitingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaitingForm.Designer.cs">
+      <DependentUpon>RaitingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpecialSqlController.cs" />
+    <Compile Include="SqlController.cs" />
+    <Compile Include="Statistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistic.Designer.cs">
+      <DependentUpon>Statistic.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddBrewForm.resx">
+      <DependentUpon>AddBrewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCustomerForm.resx">
+      <DependentUpon>AddCustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEmployerForm.resx">
+      <DependentUpon>AddEmployerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProductsForm.resx">
+      <DependentUpon>AddProductsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AurhorizationForm.resx">
+      <DependentUpon>AurhorizationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDishes.resx">
+      <DependentUpon>AddDishes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calcut.resx">
+      <DependentUpon>Calcut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckCreateForm.resx">
+      <DependentUpon>CheckCreateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerForm.resx">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeersForm.resx">
+      <DependentUpon>EmployeersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainController.resx">
+      <DependentUpon>MainController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm.resx">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderBrewForm.resx">
+      <DependentUpon>OrderBrewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderDishForm.resx">
+      <DependentUpon>OrderDishForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdersForm.resx">
+      <DependentUpon>OrdersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductsForm.resx">
+      <DependentUpon>ProductsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileForm.resx">
+      <DependentUpon>ProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RaitingForm.resx">
+      <DependentUpon>RaitingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic.resx">
+      <DependentUpon>Statistic.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Checks\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
